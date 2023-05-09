@@ -15,8 +15,8 @@ app.get('/hello', function (req, res) {
     res.send(person);
 });
 
-var server = app.listen(5555, function () {
+var server = app.listen(3306, function () {
     var host = server.address().address
     var port = server.address().port
-    console.log("Example app listening at http://localhost:5555", host, port)
+    console.log("Example app listening at http://localhost:3306", host, port)
 });
